@@ -42,12 +42,6 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <% if session[:user_id] %>
-        <li style='padding: 14px 10px 0 0; font-weight: bold; color: lightseagreen; font-size: 1.6rem'>
-        Welcome,
-          <%= User.find_by(id: session[:user_id]).name %>!
-        </li>
-        <% end %>
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 
